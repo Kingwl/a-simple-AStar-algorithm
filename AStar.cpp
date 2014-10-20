@@ -140,7 +140,7 @@ int main()
 
                     if(G > tmp -> g){
                         iter -> parent = tmp -> parent;
-                        calcG(*iter);
+                        iter -> g = calcG(*iter);
                         iter -> calcF();
                     }
                 }
